@@ -1,5 +1,5 @@
 
-feature 'Testing infrastructure' do
+feature 'Testing infastructure' do
   scenario 'Can run app and check page content' do
     visit('/')
     expect(page).to have_content 'Lets test if this works'
