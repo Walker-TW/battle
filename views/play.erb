@@ -1,8 +1,9 @@
-<%= @name1 %> vs. <%= @name2 %>
+<h1>Guess whose turn it is its.....<%=@game.whose_turn.name%>!<h1>
+<h1><%= @game.player1.name %> vs. <%= @game.player2.name %><h1>
 
 <form name="input" action="/attack" method="post">
   <input type="submit" value="Shank Fool">
 </form>
 
-<h1> <%=@name1%> HP: <%=@hp1%> <h1>
-<h1> <%=@name2%> HP: <%=@hp2%> <h1>
+<h1> <%=@game.player1.name%> HP: <%=@game.player1.hp%> <h1>
+<h1> <%=@game.player2.name%> HP: <%=@game.player2.hp%> <h1>
